@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Requested type" mandatory="true" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element label="Human Resource" sequence="0" value="HR"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="GIS" sequence="3" value="BSM"/>
+            </choice>
+        </element>
+        <element label="when needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+    </element>
+</database>
